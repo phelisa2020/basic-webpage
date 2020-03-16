@@ -1,159 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first website</title>
-   
+
     <style>
-       .container { font-family:Verdana, Geneva, Tahoma, sans-serif;
-       background-color:whitesmoke;
-       }
-
-       .header{
-           display:flex;
-
-
-       }
-       .heading{
-           flex: 1;
-       }
-       .img_City{
-          flex:2; 
-       }
-       
-       table{   
-        width: 100%;
-           border-collapse: collapse;
-         
-  
-           
-
-       }
-        tr , td , th {
-            border:black solid 1px;
-            text-align: center;
-            padding:2%;
-            margin:2%;
-         
+        .container {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: purple;
+            padding:20px;
         }
-        
-        .clearfix {
-  overflow: auto;
-  zoom: 1;
-}
-.historicalplacescontainer{
-    display:flex;
+        @media screen and(max-width: 700px) {
+            .flex-container {
+                display: flex;
+            }
+        }
 
-    
-}
-@media(max-width: 700px){
-    .historicalplacescontainer{
-        flex-direction: column;
-    }
-}
+
+        .header {
+            display: flex;
+            margin-left: 300px;
+            padding: 20px;
+            font-size: 50px;
+            justify-content: right;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        .my-paris{
+            display:flex;
+        }
+        .paris-city{
+            margin:auto;
+        }
+        .table td, .table th {
+            border: black solid 1px;
+            padding: 8px;
+        }
+        .table tr:nth-child(even){
+            background-color: rosybrown;
+        }
+        .table tr:hover{
+            background-color: royalblue;
+        }
+        .table th{
+            padding: top 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: royalblue;
+            color: white;
+        }
+        .City{
+            display: flex;
+            padding: 10px;
+            margin: 10px;
+        }
+        .DistrictFlex{
+            display: flex;
+            padding: 8px;
+            margin: 8px
+            }
+        .CityHallFlex{
+            display: flex;
+            padding: 8px;
+            margin: 8px;
+        }
+        .Parliament{display: flex;
+            padding: 8px;
+            margin: 8px;}  
+
+            .imag img{
+                width: 80%;
+                margin-left: 3.5rem;
+            } 
+
 
     </style>
 </head>
-<body class="main clearfix" >
+
+<body class="flex-container wrapper">
     <div class="container">
         <div class="header">
-            <div class="heading"><h1>Phelisa Gqwetha</h1></div>
-            <div class=img_T.Mountain>
-                <img src="/home/phelisa/projects/basic_website/tablemountain.jpeg", alt="Phelisa's photo at Table Mountain", height="200", width="300">
+            <div class="heading">
+                <h1>Phelisa Gqwetha</h1>
+            </div>
+            <div class=imag>
+                <img src="/home/phelisa/projects/basic_website/tablemountain.jpeg", 
+                     width="300%", alt="Phelisa's photo at Table Mountain">
             </div>
         </div>
 
-        <div class="content">
-          
+        <div class="mainContainer">
+
             <div class="mycity">
-                <div class="headings">  <h2>Which City? </h2></div>
-                <div class="img_City">
-                    <img  src="/home/phelisa/projects/basic_website/download.jpeg", alt="City i want to visit", height="180", width="180">
-                    <section>
-                        <p class = "p">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nam esse nostrum.
-                           Itaque alias possimus voluptates, pariatur optio accusamus nihil. 
-                           Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti?
-                          </p> </section>
+                    <h2>Which City? </h2>
+                <div class="my-paris">
+                    <div class="paris-image">
+                    <img src="/home/phelisa/projects/basic_website/download.jpeg" , alt="City i want to visit">
                 </div>
-            
-            </div>
-            <div class="content">
-                <h2>A foreign language </h2>
-                <section>
-                    <p class = "p">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nam esse nostrum.
-                       Itaque alias possimus voluptates, pariatur optio accusamus nihil. 
-                       Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti?
-                      </p> </section>
+            <div class= "paris-city">
+                    <h4><u>Paris</u></h4>
+                <p>The reason why i chose paris its because of its beauty features.<br />
+                    Paris is considered as the most beautiful place in the world.<br />The food and wine they serve is just deliciase.<br />
+                    Even though i havent tasted it but i can feel.<br />Oh and most of all the Eiffel Tower which i can take pictures on it.Paris is called a city of love because of its features.  
+                 </p>
+                     
 
-                <div class = "tables">
-                    <table>
-                    <tr>
-                        <th>English Phrase </th>
-                        <th>shona phrase</th>
-
-                    </tr>
-                    <tr>
-                        <td>Hi</td>
-                        <td>Hesi</td>
-                    </tr>
-                    <tr>
-                        <td>How are you</td>
-                        <td>urisei</td>
-
-                    </tr>
-                    <tr>
-                        <td>How old are you?</td>
-                        <td>unemakore mangani?</td>
-                    </tr>
-                </table>
-
-                </div>
-                
-                </div>
-            
-            </div>
-
-            <div class= "historicalplacescontainer">
-            <div class="content">
-                <h2>Historic places in Cape Town </h2>
-                <h3>District Six Museum</h3>
-                <div class ="img_Historical">
-                    <img src="/home/phelisa/projects/basic_website/Webp.net-resizeimage (2).jpg", alt="City i want to visit", height="180", width="180">
-                    <section>
-                      <p class = "p">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nam esse nostrum.
-                         Itaque alias possimus voluptates, pariatur optio accusamus nihil. 
-                         Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti?
-                        </p> </section>
-                </div>
-            
-            </div>
-            <div class="content">
-                <h3>City Hall</h3>
-                <div class="img_Historical">
-                    <img src="/home/phelisa/projects/basic_website/Webp.net-resizeimage (1).jpg", alt="City i want to visit">
-                    <section>
-                      <p class ="p">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nam esse nostrum.
-                         Itaque alias possimus voluptates, pariatur optio accusamus nihil. 
-                         Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti?
-                        </p> </section>
-                </div>
-            
-            </div> <div class="content">
-                <h3>Parliament of RSA  </h3>
-                <div class="img_Historical">
-                    <img  src="/home/phelisa/projects/basic_website/Webp.net-resizeimage (3).jpg", alt="City i want to visit", height="180", width="180">
-                    <section>
-                      <p class ="p">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nam esse nostrum.
-                         Itaque alias possimus voluptates, pariatur optio accusamus nihil. 
-                         Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti?
-                        </p> </section>
-                </div>
-            
             </div>
         </div>
-    </div>       
-</div>
-    
+    </div>
+            <div class="Foreign language">
+                <h2>A foreign language </h>
+                <div class="table">
+                    <table>
+                        <tr>
+                            <th>"English Phrase" </th>
+                            <th>"shona phrase"</th>
+
+                        </tr>
+                        <tr>
+                            <td>"Hi"</td>
+                            <td>"Hesi"</td>
+                        </tr>
+                        <tr>
+                            <td>"How are you"</td>
+                            <td>"urisei"</td>
+
+                        </tr>
+                        <tr>
+                            <td>"How old are you?"</td>
+                            <td>"unemakore mangani?"</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="Section For 3 Historical">
+            <div class="District">
+                <h2>historical places in Cape Town</h2>
+                <h3>District Six Musium</h3>
+                <div class="DistrictFlex">
+                <p>
+                <ul> 
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <br /><li>Tempora nam esse nostrum.
+                    Itaque alias possimus voluptates, pariatur optio accusamus nihil.</li><br />
+                    <li>Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti? </li> 
+                </ul> 
+                </p>
+                    <img src="/home/phelisa/projects/basic_website/Webp.net-resizeimage (2).jpg" ,
+                        alt="City i want to visit", width="80%",height="50%">
+                        
+                </div>
+
+            </div>
+            <div class="Musium">
+                <h3>City Hall</h3>
+                <div class="CityHallFlex">
+                    <img src="/home/phelisa/projects/basic_website/Webp.net-resizeimage (1).jpg" , width="80%"
+                        alt="City i want to visit">
+                        <p class="p"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nam esse nostrum.
+                            Itaque alias possimus voluptates, pariatur optio accusamus nihil.
+                            Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti?
+                        </p>
+                </div>
+
+            </div>
+            <div class=Parliament>
+                <h3>Parliament of RSA </h3>
+                <div class="ParliamentFlex">
+                        <p><ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li><br />
+                         Tempora nam esse nostrum.
+                            Itaque alias possimus voluptates, pariatur optio accusamus nihil.
+                            Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti?
+                            </ul>
+                        </p>
+                        <img src="/home/phelisa/projects/basic_website/Webp.net-resizeimage (3).jpg" ,
+                        alt="City i want to visit" , height="180" , width="180">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
