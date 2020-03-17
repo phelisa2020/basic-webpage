@@ -7,16 +7,19 @@
     <title>My first website</title>
 
     <style>
+        body{
+            display:flex;
+        }
         .container {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             background-color: purple;
             padding:20px;
         }
-        @media screen and(max-width: 700px) {
-            .flex-container {
-                display: flex;
-            }
-        }
+        @media screen and (min-width: 640px){
+    .flex-container {
+        display: flex;
+    }    
+}
 
 
         .header {
@@ -53,7 +56,7 @@
             background-color: royalblue;
             color: white;
         }
-        .City{
+        /* .City{ 
             display: flex;
             padding: 10px;
             margin: 10px;
@@ -71,26 +74,36 @@
         .ParliamentFlex{
             display: flex;
             padding: 8px;
-            margin: 8px;}  
+            margin: 8px;}   */
 
             .imag img{
                 width: 80%;
                 margin-left: 3.5rem;
             } 
-
+            .SectionFor3Historical{
+                display: flex;
+            }
+            .DistrictFlex{
+                display: flex;
+            }
+            .CityHallFlex{
+                display: flex;
+            }
+            .ParliamentFlex{
+                display: flex;
+            }
 
     </style>
 </head>
 
-<body class="flex-container wrapper">
+<body class="flex-container">
     <div class="container">
         <div class="header">
             <div class="heading">
                 <h1>Phelisa Gqwetha</h1>
             </div>
             <div class=imag>
-                <img src="tablemountain.jpeg", 
-                     width="300%", alt="Phelisa's photo at Table Mountain">
+                <img src="./images/tablemountain.jpg" alt="Phelisa's photo at Table Mountain">
             </div>
         </div>
 
@@ -100,7 +113,7 @@
                     <h2>Which City? </h2>
                 <div class="my-paris">
                     <div class="paris-image">
-                    <img src="download.jpeg" , alt="City i want to visit">
+                    <img src="./images/download.jpeg" , alt="City i want to visit">
                 </div>
             <div class= "paris-city">
                     <h4><u>Paris</u></h4>
@@ -142,11 +155,11 @@
             </div>
 
         </div>
-
-        <div class="Section For 3 Historical">
+        <h2>historical places in Cape Town</h2>
+        <div class="SectionFor3Historical">
             <div class="District">
-                <h2>historical places in Cape Town</h2>
                 <h3>District Six Musium</h3>
+             
                 <div class="DistrictFlex">
                 <p>
                 <ul> 
@@ -156,8 +169,8 @@
                     <li>Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti? </li> 
                 </ul> 
                 </p>
-                    <img src="IMG_2718 (copy).JPG" ,
-                        alt="City i want to visit", width="40%">
+                    <img src="./images/district6.jpg",
+                        alt="City i want to visit">
                         
                 </div>
 
@@ -174,7 +187,7 @@
                             <li>Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti?</li>
                             </ul>
                         </p>
-                        <img src="IMG_2718 (copy).JPG" , width="40%"
+                        <img src="./images/cityhall.jpg"
                         alt="City i want to visit">
                 </div>
 
@@ -188,8 +201,8 @@
                            <br /><li>Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti?</li>
                             </ul>
                         </p>
-                        <img src="Webp.net-resizeimage (1).jpg" ,
-                        alt="City i want to visit" >
+                        <img src="./images/castleofgoodhope.jpg",
+                        alt="City i want to visit">
                 </div>
 
             </div>
