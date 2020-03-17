@@ -7,55 +7,62 @@
     <title>My first website</title>
 
     <style>
-        body{
-            display:flex;
+        body {
+            /* display: flex; */
         }
+
         .container {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             background-color: purple;
-            padding:20px;
+            padding: 20px;
         }
-        @media screen and (min-width: 640px){
-    .flex-container {
-        display: flex;
-    }    
-}
 
+       
 
         .header {
             display: flex;
-            margin-left: 300px;
-            padding: 20px;
-            font-size: 50px;
+            margin: auto;
+            /* padding: 20px; */
+            font-size: 2em;
             justify-content: right;
         }
 
         table {
             border-collapse: collapse;
+            width : 70%;
+            
         }
-        .my-paris{
-            display:flex;
+
+        .my-paris {
+            display: flex;
         }
-        .paris-city{
-            margin:auto;
+
+        .paris-city {
+            margin: auto;
         }
-        .table td, .table th {
+
+        .table td,
+        .table th {
             border: black solid 1px;
             padding: 8px;
         }
-        .table tr:nth-child(even){
+
+        .table tr:nth-child(even) {
             background-color: rosybrown;
         }
-        .table tr:hover{
+
+        .table tr:hover {
             background-color: royalblue;
         }
-        .table th{
+
+        .table th {
             padding: top 12px;
             padding-bottom: 12px;
             text-align: left;
             background-color: royalblue;
             color: white;
         }
+
         /* .City{ 
             display: flex;
             padding: 10px;
@@ -76,22 +83,53 @@
             padding: 8px;
             margin: 8px;}   */
 
-            .imag img{
-                width: 80%;
-                margin-left: 3.5rem;
-            } 
-            .SectionFor3Historical{
+        /* .imag img {
+            width: 80%;
+            margin-left: 3.5rem;
+        } */
+
+        .SectionFor3Historical {
+            display: flex;
+        }
+
+        .DistrictFlex {
+            display: flex;
+        }
+
+        .CityHallFlex {
+            display: flex;
+        }
+
+        .ParliamentFlex {
+            display: flex;
+        }
+        img{
+            height: 10em;
+        }
+         /* @media(max-width: 640px) {
+            .flex-container {
                 display: flex;
+                flex-direction: column;
             }
-            .DistrictFlex{
-                display: flex;
-            }
-            .CityHallFlex{
-                display: flex;
-            }
-            .ParliamentFlex{
-                display: flex;
-            }
+        } */
+        @media(max-width: 700px) {
+            .my-paris{
+    display: flex;
+                flex-direction: column;
+ }
+}
+        @media(max-width: 700px) {
+ .header{
+    display: flex;
+                flex-direction: column;
+ }
+}
+        @media(max-width: 700px) {
+ .SectionFor3Historical{
+    display: flex;
+                flex-direction: column;
+ }
+}
 
     </style>
 </head>
@@ -99,58 +137,60 @@
 <body class="flex-container">
     <div class="container">
         <div class="header">
-            <div class="heading">
+            <!-- <div class="heading"> -->
                 <h1>Phelisa Gqwetha</h1>
-            </div>
-            <div class=imag>
+            <!-- </div> -->
+           
                 <img src="./images/tablemountain.jpg" alt="Phelisa's photo at Table Mountain">
-            </div>
+            
         </div>
 
         <div class="mainContainer">
 
             <div class="mycity">
-                    <h2>Which City? </h2>
+                <h2>Which City? </h2>
                 <div class="my-paris">
                     <div class="paris-image">
-                    <img src="./images/download.jpeg" , alt="City i want to visit">
-                </div>
-            <div class= "paris-city">
-                    <h4><u>Paris</u></h4>
-                <p>The reason why i chose paris its because of its beauty features.<br />
-                    Paris is considered as the most beautiful place in the world.<br />The food and wine they serve is just deliciase.<br />
-                    Even though i havent tasted it but i can feel.<br />Oh and most of all the Eiffel Tower which i can take pictures on it.Paris is called a city of love because of its features.  
-                 </p>
-                     
+                        <img src="./images/download.jpeg" , alt="City i want to visit">
+                    </div>
+                    <div class="paris-city">
+                        <h4><u>Paris</u></h4>
+                        <p>The reason why i chose paris its because of its beauty features.<br />
+                            Paris is considered as the most beautiful place in the world.<br />The food and wine they
+                            serve is just deliciase.<br />
+                            Even though i havent tasted it but i can feel.<br />Oh and most of all the Eiffel Tower
+                            which i can take pictures on it.Paris is called a city of love because of its features.
+                        </p>
 
+
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
             <div class="Foreign language">
                 <h2>A foreign language </h>
-                <div class="table">
-                    <table>
-                        <tr>
-                            <th>"English Phrase" </th>
-                            <th>"shona phrase"</th>
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>"English Phrase" </th>
+                                <th>"shona phrase"</th>
 
-                        </tr>
-                        <tr>
-                            <td>"Hi"</td>
-                            <td>"Hesi"</td>
-                        </tr>
-                        <tr>
-                            <td>"How are you"</td>
-                            <td>"urisei"</td>
+                            </tr>
+                            <tr>
+                                <td>"Hi"</td>
+                                <td>"Hesi"</td>
+                            </tr>
+                            <tr>
+                                <td>"How are you"</td>
+                                <td>"urisei"</td>
 
-                        </tr>
-                        <tr>
-                            <td>"How old are you?"</td>
-                            <td>"unemakore mangani?"</td>
-                        </tr>
-                    </table>
+                            </tr>
+                            <tr>
+                                <td>"How old are you?"</td>
+                                <td>"unemakore mangani?"</td>
+                            </tr>
+                        </table>
 
-                </div>
+                    </div>
 
             </div>
 
@@ -159,50 +199,51 @@
         <div class="SectionFor3Historical">
             <div class="District">
                 <h3>District Six Musium</h3>
-             
+
                 <div class="DistrictFlex">
-                <p>
-                <ul> 
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <br /><li>Tempora nam esse nostrum.
-                    Itaque alias possimus voluptates, pariatur optio accusamus nihil.</li><br />
-                    <li>Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti? </li> 
-                </ul> 
-                </p>
-                    <img src="./images/district6.jpg",
-                        alt="City i want to visit">
-                        
+                    <p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <br />
+                            <li>Tempora nam esse nostrum.
+                                Itaque alias possimus voluptates, pariatur optio accusamus nihil.</li><br />
+                            <li>Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti? </li>
+                        </ul>
+                    </p>
+                    <img src="./images/district6.jpg" , alt="City i want to visit">
+
                 </div>
 
             </div>
             <div class="Musium">
                 <h3>City Hall</h3>
                 <div class="CityHallFlex">
-                        <p>
-                            <ul>
+                    <p>
+                        <ul>
 
-                            <li> Lorem ipsum dolor sit amet consectetur adipisicing elit</li>. 
-                            <br /><li>Tempora nam esse nostrum.
-                            Itaque alias possimus voluptates, pariatur optio accusamus nihil.</li><br />
+                            <li> Lorem ipsum dolor sit amet consectetur adipisicing elit</li>.
+                            <br />
+                            <li>Tempora nam esse nostrum.
+                                Itaque alias possimus voluptates, pariatur optio accusamus nihil.</li><br />
                             <li>Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti?</li>
-                            </ul>
-                        </p>
-                        <img src="./images/cityhall.jpg"
-                        alt="City i want to visit">
+                        </ul>
+                    </p>
+                    <img src="./images/cityhall.jpg" alt="City i want to visit">
                 </div>
 
             </div>
             <div class=Parliament>
                 <h3>Parliament of RSA </h3>
                 <div class="ParliamentFlex">
-                        <p><ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li><br />
+                    <p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li><br />
                             <li>Itaque alias possimus voluptates, pariatur optio accusamus nihil.</li>
-                           <br /><li>Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti?</li>
-                            </ul>
-                        </p>
-                        <img src="./images/castleofgoodhope.jpg",
-                        alt="City i want to visit">
+                            <br />
+                            <li>Quo laudantium eum nesciunt hic eius veritatis magnam sunt deleniti?</li>
+                        </ul>
+                    </p>
+                    <img src="./images/castleofgoodhope.jpg" , alt="City i want to visit">
                 </div>
 
             </div>
