@@ -7,6 +7,19 @@
     <title>my-webpage-grid.html</title>
     <link rel="stylesheet" href="simple-grid.css">
     <style>
+        .Content {
+            display: flex;
+            width: 23em;
+            height: 23em;
+            font-size:medium;
+            font-style:italic
+        }
+        @media(min-width:800px){
+            col-4 {
+                display: flex;
+                margin: 0.5em;
+            }
+        }
         table {
             border-collapse: collapse;
             width : 70%;
@@ -33,10 +46,14 @@
             background-color: royalblue;
             color: white;
         }
-        .grid-container {
-            display: grid;
-            background-color: grey;
-            padding: 4px
+        .container {
+            display: grid;;
+            padding: 5em;
+            margin: 3em;
+            font-style: oblique;
+            height:1em;
+            font-size: medium;
+
 }
     </style>
 
@@ -59,7 +76,8 @@
         <div class="row">
             <h2>Which City? </h2>
             <div class="col-8">
-                <img src="./images/download.jpeg" , alt="City i want to visit">
+                <img src="./images/download.jpeg" ,
+                 alt="City i want to visit">
             </div>
             <div class="col-4">
                 <h4><u>Paris</u></h4>
@@ -99,11 +117,15 @@
             </div>
         
     </div>
+    <h2>historical places in Cape Town</h2>
     <div class="row">
-        <h2>historical places in Cape Town</h2>
-        <div class="col-2">
+        
+        <div class="col-4">
             <h3>District Six Musium</h3>
-
+            <div class="Content">
+           
+           
+            <img src="./images/district6.jpg" , alt="City i want to visit",width="150"px , height="150px">
             <p>
                 <ul>
                     <li>This area was named District Six when it became the Sixth Municipal District of Cape Town in 1867.</li>
@@ -112,12 +134,17 @@
                     <li>The floor of the museum is covered with a big map of the district with hand written notes of former inhabitants, which indicate where their houses were once located. </li>
                 </ul>
             </p>
+            </div>
         </div>
-        <div class="col-2">
-            <img src="./images/district6.jpg" , alt="City i want to visit">
-        </div>
-        <div class="col-2">
+
+          
+      
+        <div class="col-4">
             <h3>City Hall</h3>
+            <div class="Content">
+            
+           
+            <img src="./images/cityhall.jpg" alt="City i want to visit" ,width="150"px , height="150px">
             <p>
                 <ul>
 
@@ -127,12 +154,15 @@
                     <li>Mayor H Lieberman inaugurated the Cape Town City hall in 1905.</li>
                 </ul>
             </p>
+            </div>
         </div>
-        <div class="col-2">
-            <img src="./images/cityhall.jpg" alt="City i want to visit">
-        </div>
-        <div class="col-2">
+    
+        <div class="col-4">
             <h3>Castle of Good Hope  </h3>
+            <div class="Content">
+            
+
+            <img src="./images/castleofgoodhope.jpg" , alt="City i want to visit" , width="150"px , height="150px">
             <p>
                 <ul>
                     <li>It was build between 1666 and 1679 by the Dutch East India Company, it’s the oldest existing colonial building in South Africa.</li><br />
@@ -143,10 +173,7 @@
             </p>
     
         </div>
-        <div class="col-2">
-            <img src="./images/castleofgoodhope.jpg" , alt="City i want to visit">
-        </div>
-
+       
     </div>
 </body>
 
