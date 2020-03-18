@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-webpage-grid.html</title>
+    <link rel="stylesheet" href="simple-grid.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            width : 70%;
+            padding: 2em;
+            
+        }
+        table td, th, tr {
+            border: black solid 1px;
+            padding: 8px;
+        }
+
+        table tr:nth-child(even) {
+            background-color: rosybrown;
+        }
+
+        table tr:hover {
+            background-color: royalblue;
+        }
+
+        table th {
+            padding: top 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: royalblue;
+            color: white;
+        }
+        .grid-container {
+            display: grid;
+            background-color: grey;
+            padding: 4px
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h1>Phelisa Gqwetha</h1>
+
+
+            </div>
+            <div class="col-6">
+                <img src="./images/tablemountain.jpg" alt="Phelisa's photo at Table Mountain">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <h2>Which City? </h2>
+            <div class="col-8">
+                <img src="./images/download.jpeg" , alt="City i want to visit">
+            </div>
+            <div class="col-4">
+                <h4><u>Paris</u></h4>
+                        <p>The reason why i chose paris its because of its beauty features.<br />
+                            Paris is considered as the most beautiful place in the world.<br />The food and wine they
+                            serve is just deliciase.<br />
+                            Even though i havent tasted it but i can feel.<br />Oh and most of all the Eiffel Tower
+                            which i can take pictures on it.Paris is called a city of love because of its features.
+                        </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>A foreign language </h>
+            <div class="col-12">
+                <table>
+                    <tr>
+                        <th>"English Phrase" </th>
+                        <th>"shona phrase"</th>
+
+                    </tr>
+                    <tr>
+                        <td>"Hi"</td>
+                        <td>"Hesi"</td>
+                    </tr>
+                    <tr>
+                        <td>"How are you"</td>
+                        <td>"urisei"</td>
+
+                    </tr>
+                    <tr>
+                        <td>"How old are you?"</td>
+                        <td>"unemakore mangani?"</td>
+                    </tr>
+                </table>
+
+            </div>
+        
+    </div>
+    <div class="row">
+        <h2>historical places in Cape Town</h2>
+        <div class="col-2">
+            <h3>District Six Musium</h3>
+
+            <p>
+                <ul>
+                    <li>This area was named District Six when it became the Sixth Municipal District of Cape Town in 1867.</li>
+                    <br />
+                    <li>By 1982, after being declared a whites only area, the life of the community was over.</li><br />
+                    <li>The floor of the museum is covered with a big map of the district with hand written notes of former inhabitants, which indicate where their houses were once located. </li>
+                </ul>
+            </p>
+        </div>
+        <div class="col-2">
+            <img src="./images/district6.jpg" , alt="City i want to visit">
+        </div>
+        <div class="col-2">
+            <h3>City Hall</h3>
+            <p>
+                <ul>
+
+                    <li>Nelson Mandela made his first speech from City Hall after his release from prison back in 1990.</li>.
+                    <br />
+                    <li>Back to the Cape Town City hall there is Darling Street.</li><br />
+                    <li>Mayor H Lieberman inaugurated the Cape Town City hall in 1905.</li>
+                </ul>
+            </p>
+        </div>
+        <div class="col-2">
+            <img src="./images/cityhall.jpg" alt="City i want to visit">
+        </div>
+        <div class="col-2">
+            <h3>Castle of Good Hope  </h3>
+            <p>
+                <ul>
+                    <li>It was build between 1666 and 1679 by the Dutch East India Company, it’s the oldest existing colonial building in South Africa.</li><br />
+                    <li>The first stone was laid on 2 January 1666 and it was completed by April 1679</li>
+                    <br />
+                    <li>The Castle was built by soldiers, volunteers, slaves and Khoi undergoing punishment.</li>
+                </ul>
+            </p>
+    
+        </div>
+        <div class="col-2">
+            <img src="./images/castleofgoodhope.jpg" , alt="City i want to visit">
+        </div>
+
+    </div>
+</body>
+
+</html>
