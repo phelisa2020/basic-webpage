@@ -3,34 +3,87 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content='width=device-width, initial-scale=1.0'>
     <title>My first website</title>
 
     <style>
-
-        .container {
+        html {
+  font: 1.1em/1.4 Helvetica, sans-serif;
+}
+       /* html,body{
+            margin: 1px
+            height:100%;
+*/
+        }
+       /* body{
+            display:flex;
+        }*/
+        * { box-sizing: border-box; }*
+        .wrapper {
+  border: 5px solid rgb(86,98,110);
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+.wrapper > div {
+  background-color: rgb(89,161,175);
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+    .foreighH2{
+        padding: 5px;
+    } 
+    .wrapper-flex{
+        display:flex;
+    }   /*.container {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             background-color: purple;
-            padding: 20px;
-        }
+            padding:20px;
+            display: flex;
+        }*/
+        /*@media(max-width: 800px) {
+            body {
+                display: flex; 
+            }
+        }*/
 
-       
 
         .header {
             display: flex;
-            margin: auto;
-             padding: 20px; 
-            font-size: 2em;
-            justify-content: right;
+            padding: 10px;
+            font-size: 20px;
+            justify-content: center;
         }
+/*.ForeignLanguage {
+  column-width: 
 
         table {
             border-collapse: collapse;
-            width : 70%;
-            padding: 2em;
-            
         }
-
+        /*.my-paris{
+            display:flex;
+        }*/
+        /*.paris-city{
+            margin:auto;
+        }*/
+        .table td, .table th {
+            border: black solid 1px;
+            padding: 8px;
+        }
+        .table tr:nth-child(even){
+            background-color: rosybrown;
+        }
+        .table tr:hover{
+            background-color: royalblue;
+        }
+        .table th{
+            padding: top 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: royalblue;
+            color: white;
+        }
         .my-paris {
             display: flex;
         }
@@ -38,152 +91,152 @@
         .paris-city {
             margin: auto;
         }
+         /*.City{
+            display: flex;
+            padding: 10px;
+            margin: 10px; ––>
+        } -->*/
+        .flex {
+   display: flex;
+  flex-wrap: wrap;
+}
 
-        .table td,
-        .table th {
-            border: black solid 1px;
+.flex > * {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+.media {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.media > * {
+    flex: 1 1 250px;
+}
+     /* <!--  .DistrictFlex{
+            display: flex;
             padding: 8px;
-        }
-
-        .table tr:nth-child(even) {
-            background-color: rosybrown;
-        }
-
-        .table tr:hover {
-            background-color: royalblue;
-        }
-
-        .table th {
-            padding: top 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: royalblue;
-            color: white;
-        }
-
-      
-
-        .SectionFor3Historical {
+            margin: 8px
+            }-->
+       <!-- .CityHallFlex{
             display: flex;
+            padding: 8px;
+            margin: 8px;-->
         }
-
-        .DistrictFlex {
+   <!--     .ParliamentFlex{
             display: flex;
-        }
+            padding: 8px;
+            margin: 8px;}  -->*/
 
-        .CityHallFlex {
-            display: flex;
-        }
+            .imag img{
+                width: 10%;
+                margin-left: 3.5rem;}
+        img { max-width: 100%; height: auto; }
 
-        .CastleFlex {
-            display: flex;
-        }
-        img{
-            height: 10em;
-        }
-       
-        @media(max-width: 700px) {
-            .my-paris{
+
+   @media(max-width: 700px) {
+ .wrapper-flex{
     display: flex;
                 flex-direction: column;
  }
 }
+
         @media(max-width: 700px) {
  .header{
     display: flex;
                 flex-direction: column;
  }
 }
-        @media(max-width: 700px) {
- .SectionFor3Historical{
+  @media(max-width: 700px) {
+            .my-paris{
     display: flex;
                 flex-direction: column;
  }
 }
-
     </style>
 </head>
 
-<body class="flex-container">
-    <div class="container">
-        <div class="header">
-            
-                <h1>Phelisa Gqwetha</h1>
-           
-                <img src="./images/tablemountain.jpg" alt="Phelisa's photo at Table Mountain">
-            
+<!-- <body class="flex-container wrapper"> -->
+    <div class="wrapper container">
+        <div class= "header">
+            <div class="heading">
+                <h1>Phelisa (nzwaki) Gqwetha!</h1>
+            </div>
+            <div class=imag-circle>
+                 <img src="./images/tablemountain.jpg" alt="Phelisa's photo at Table Mountain">
+            </div>
         </div>
 
         <div class="mainContainer">
 
             <div class="mycity">
-                <h2>Which City? </h2>
+                    <h2>Which City? </h2>
                 <div class="my-paris">
                     <div class="paris-image">
-                        <img src="./images/download.jpeg" , alt="City i want to visit">
-                    </div>
-                    <div class="paris-city">
-                        <h4><u>Paris</u></h4>
-                        <p>The reason why i chose paris its because of its beauty features.<br />
-                            Paris is considered as the most beautiful place in the world.<br />The food and wine they
-                            serve is just deliciase.<br />
-                            Even though i havent tasted it but i can feel.<br />Oh and most of all the Eiffel Tower
-                            which i can take pictures on it.Paris is called a city of love because of its features.
-                        </p>
-
-
-                    </div>
+                     <img src="./images/district6.jpg" , alt="City i want to visit">
                 </div>
+            <div class= "paris-city">
+                    <h4><u>Paris</u></h4>
+                <p>The reason why i chose paris its because of its beauty features.<br />
+                    Paris is considered as the most beautiful place in the world.<br />The food and wine they serve is just deliciase.<br />
+                    Even though i havent tasted it but i can feel.<br />Oh and most of all the Eiffel Tower which i can take pictures on it.Paris is called a city of love because of its features.  
+                 </p>
+                     
+
             </div>
+        </div>
+    </div>
+<div class='foreighH2'>
+     <h2> Foreign Language </h2>
+     </div>
             <div class="Foreign language">
-                <h2>A foreign language </h>
-                    <div class="table">
-                        <table>
-                            <tr>
-                                <th>"English Phrase" </th>
-                                <th>"shona phrase"</th>
+               
+                <div class="table">
+                    <table>
+                        <tr>
+                            <th>"English Phrase" </th>
+                            <th>"shona phrase"</th>
 
-                            </tr>
-                            <tr>
-                                <td>"Hi"</td>
-                                <td>"Hesi"</td>
-                            </tr>
-                            <tr>
-                                <td>"How are you"</td>
-                                <td>"urisei"</td>
+                        </tr>
+                        <tr>
+                            <td>"Hi"</td>
+                            <td>"Hesi"</td>
+                        </tr>
+                        <tr>
+                            <td>"How are you"</td>
+                            <td>"urisei"</td>
 
-                            </tr>
-                            <tr>
-                                <td>"How old are you?"</td>
-                                <td>"unemakore mangani?"</td>
-                            </tr>
-                        </table>
+                        </tr>
+                        <tr>
+                            <td>"How old are you?"</td>
+                            <td>"unemakore mangani?"</td>
+                        </tr>
+                    </table>
 
-                    </div>
+                </div>
 
             </div>
 
         </div>
-        <h2>historical places in Cape Town</h2>
-        <div class="SectionFor3Historical">
+<h2>historical places in Cape Town</h2>
+        <div class="wrapper-flex">
             <div class="District">
+                
                 <h3>District Six Musium</h3>
-
                 <div class="DistrictFlex">
-                    <p>
-                        <ul>
-                            <li>This area was named District Six when it became the Sixth Municipal District of Cape Town in 1867.</li>
-                            <br />
-                            <li>By 1982, after being declared a whites only area, the life of the community was over.</li><br />
-                            <li>The floor of the museum is covered with a big map of the district with hand written notes of former inhabitants, which indicate where their houses were once located. </li>
-                        </ul>
-                    </p>
-                    <img src="./images/district6.jpg" , alt="City i want to visit">
-
+                <p>
+                <ul> 
+                    <li>This area was named District Six when it became the Sixth Municipal District of Cape Town in 1867. 
+                    </li>
+                    <br /><li>The South African apartheid government swooped down on District Six in 1966, forcibly removing its occupants and declaring the area a “whites-only” zone.</li><br />
+                    <li> The museum was created as a space for reflection and contemplation. </li> 
+                </ul> 
+                </p>
+                   <img src="./images/district6.jpg" , alt="City i want to visit">
                 </div>
 
             </div>
-            <div class="CityHall">
+            <div class="Musium">
                 <h3>City Hall</h3>
                 <div class="CityHallFlex">
                     <p>
@@ -201,6 +254,8 @@
             </div>
             <div class=Castle>
                 <h3>Castle of Good Hope  </h3>
+                 <div class=Castle>
+                <h3>Castle of Good Hope  </h3>
                 <div class="CastleFlex">
                     <p>
                         <ul>
@@ -210,7 +265,7 @@
                             <li>The Castle was built by soldiers, volunteers, slaves and Khoi undergoing punishment.</li>
                         </ul>
                     </p>
-                    <img src="./images/castleofgoodhope.jpg" , alt="City i want to visit">
+                    <img src="./images/castleofgoodhope.jpg" ,width='10px' alt="City i want to visit">
                 </div>
 
             </div>
