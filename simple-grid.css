@@ -16,15 +16,45 @@ body {
   left: 0;
   top: 0;
   font-size: 100%;
-  color: blueviolet;
+  background-color: grey;
 }
 
 /* ROOT FONT STYLES */
 
 * {
   font-family: 'Lato', Helvetica, sans-serif;
-  color: #333447;
+  color: black;
   line-height: 1.5;
+  box-sizing: border-box;
+  border-color: solid black;
+
+}
+  .wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+   .row4 {
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.row1 {
+  display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+}
+.row2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+}
+* {
+  box-sizing:border-box;
 }
 
 /* TYPOGRAPHY */
@@ -54,7 +84,7 @@ h6 {
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 1.120rem;
   font-weight: 200;
   line-height: 1.8;
 }
@@ -79,6 +109,8 @@ p {
 
 .right {
   text-align: right;
+
+
 }
 
 .center {
@@ -87,8 +119,9 @@ p {
   margin-right: auto;
 }
 
-.justify {
+.justify img {
   text-align: justify;
+
 }
 
 /* ==== GRID SYSTEM ==== */
@@ -99,6 +132,10 @@ p {
   margin-right: auto;
 }
 
+.row {
+  position: relative;
+  width: 100%;
+}
 .row {
   position: relative;
   width: 100%;
@@ -174,9 +211,9 @@ p {
 }
 
 .row::after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .hidden-sm {
@@ -212,6 +249,7 @@ p {
 
   .col-6 {
     width: 46%;
+
   }
 
   .col-7 {

@@ -58,15 +58,16 @@
 /*.ForeignLanguage {
   column-width: 
 
-        table {
-            border-collapse: collapse;
-        }
+        
         /*.my-paris{
             display:flex;
         }*/
         /*.paris-city{
             margin:auto;
         }*/
+        table {
+            border-collapse: collapse;
+        }
         .table td, .table th {
             border: black solid 1px;
             padding: 8px;
@@ -91,6 +92,11 @@
         .paris-city {
             margin: auto;
         }
+        @media (max-width:768px) {
+    .{
+        display:none;
+    }
+}
          /*.City{
             display: flex;
             padding: 10px;
@@ -153,6 +159,19 @@
                 flex-direction: column;
  }
 }
+@breakpoint: 500px;
+@media all and (max-width: @breakpoint) {
+  .Foreign-language  {
+    display: block;
+      width: 100%;
+      margin-bottom: 1em; 
+  }
+}
+.no-flexbox .Foreign-language {
+  display: block;
+   width: 100%;
+  margin-bottom: 1em;
+}
     </style>
 </head>
 
@@ -189,7 +208,7 @@
 <div class='foreighH2'>
      <h2> Foreign Language </h2>
      </div>
-            <div class="Foreign language">
+            <div class="Foreign-language">
                
                 <div class="table">
                     <table>
