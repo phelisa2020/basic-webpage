@@ -39,6 +39,10 @@ body {
   padding: 10px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+ .row3 {
+  grid-gap: 10px;
+  padding: 10px;
+}
 .row1 {
   display: grid;
  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
